@@ -349,12 +349,11 @@ PORTAFOLIO
 }
 
 .portafolio-contenedor{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .slider{
     width:100%;
     max-width:1100px;
@@ -656,37 +655,42 @@ height:auto;
 }
 
 .flecha{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
 
-width:34px;
+    width:42px;
+    height:42px;
 
-height:34px;
+    border:none;
+    border-radius:50%;
 
-font-size:16px;
+    background:rgba(17,24,39,.70);
 
-padding-bottom:0;
+    color:#fff;
+    font-size:18px;
 
-}
-#anterior{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-left:10px;
+    cursor:pointer;
+    transition:.3s;
 
-}
-
-#siguiente{
-
-right:10px;
-
-}
-
-#cerrar{
-
-right:20px;
-
-font-size:42px;
-
+    z-index:20;
 }
 
+.flecha:hover{
+    background:#2563EB;
+
+#prev{
+    left:15px;
 }
+
+#next{
+    right:15px;
+}
+
 /*==================================================
 NOSOTROS
 ==================================================*/
