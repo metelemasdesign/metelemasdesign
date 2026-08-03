@@ -326,7 +326,6 @@ text-align:center;
 
 }
 
-}
 
 /*==================================================
 PORTAFOLIO
@@ -446,127 +445,6 @@ PORTAFOLIO
 
 }
 
-/* FLECHAS */
-
-.flecha{
-
-    width:55px;
-    height:55px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#111827;
-
-    color:#fff;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    flex-shrink:0;
-
-}
-
-.flecha:hover{
-
-    background:#2563EB;
-
-}
-
-/* LIGHTBOX */
-
-#lightbox{
-
-    position:fixed;
-
-    inset:0;
-
-    display:none;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:rgba(0,0,0,.92);
-
-    z-index:9999;
-
-}
-
-#lightbox.activo{
-
-    display:flex;
-
-}
-
-#imagenGrande{
-
-    max-width:90%;
-
-    max-height:90vh;
-
-    border-radius:14px;
-
-}
-
-#cerrar{
-
-    position:absolute;
-
-    top:20px;
-
-    right:35px;
-
-    color:#fff;
-
-    font-size:48px;
-
-    cursor:pointer;
-
-}
-
-#anterior,
-#siguiente{
-
-    position:absolute;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    width:58px;
-
-    height:58px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#fff;
-
-    color:#2563EB;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-}
-
-#anterior{
-
-    left:25px;
-
-}
-
-#siguiente{
-
-    right:25px;
-
-}
 
 /* RESPONSIVE */
 
@@ -584,16 +462,12 @@ grid-template-columns:repeat(2,1fr);
 
 .portafolio-contenedor{
 
-gap:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
 
 }
-
-.grupo{
-
-grid-template-columns:1fr;
-
-}
-
 .flecha{
 
 width:45px;
@@ -603,41 +477,6 @@ height:45px;
 font-size:22px;
 
 }
-
-}
-/*==================================================
-FLECHAS
-==================================================*/
-
-.flecha{
-
-    width:55px;
-    height:55px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#111827;
-
-    color:#fff;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    flex-shrink:0;
-
-}
-
-.flecha:hover{
-
-    background:#2563EB;
-
-}
-
 
 /*==================================================
 LIGHTBOX
@@ -818,16 +657,15 @@ height:auto;
 
 .flecha{
 
-width:45px;
+width:34px;
 
-height:45px;
+height:34px;
 
-font-size:22px;
-   
-padding-bottom:4px;
+font-size:16px;
+
+padding-bottom:0;
 
 }
-
 #anterior{
 
 left:10px;
