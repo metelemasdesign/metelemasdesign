@@ -355,6 +355,7 @@ PORTAFOLIO
     align-items: center;
 }
 .slider{
+    position: relative;
     width:100%;
     max-width:1100px;
 }
