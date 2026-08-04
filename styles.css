@@ -445,38 +445,41 @@ PORTAFOLIO
     font-size:.9rem;
 
 }
+
 /* FLECHAS */
 
 .flecha{
-
-    width:38px;
-    height:38px;
-
+    width:55px;
+    height:55px;
     border:none;
     border-radius:50%;
-
-    background:rgba(17,24,39,.8);
-
+    background:#111827;
     color:#fff;
-
-    font-size:20px;
-
+    font-size:28px;
     cursor:pointer;
-
     transition:.3s;
-
     flex-shrink:0;
+}
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.flecha::after {
+  content: "";
+  display: block;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
+#prev::after {
+  background-image: url("./img/icons/chevron-left.svg");
+}
+
+#next::after {
+  background-image: url("./img/icons/chevron-right.svg");
 }
 
 .flecha:hover{
-
     background:#2563EB;
-
 }
 
 /* LIGHTBOX */
@@ -535,44 +538,41 @@ PORTAFOLIO
 #siguiente{
 
     position:absolute;
+
     top:50%;
+
     transform:translateY(-50%);
 
-    width:42px;
-    height:42px;
+    width:58px;
+
+    height:58px;
 
     border:none;
+
     border-radius:50%;
 
-    background:rgba(255,255,255,.9);
+    background:#fff;
+
     color:#2563EB;
 
-    font-size:18px;
-    font-weight:bold;
+    font-size:28px;
 
     cursor:pointer;
-    transition:.3s;
+
 }
 
 #anterior{
 
-    left:15px;
+    left:25px;
 
 }
 
 #siguiente{
 
-    right:15px;
+    right:25px;
 
 }
 
-#anterior:hover,
-#siguiente:hover{
-
-    background:#2563EB;
-    color:#fff;
-
-}
 /* RESPONSIVE */
 
 @media(max-width:900px){
@@ -610,8 +610,6 @@ font-size:22px;
 }
 
 }
-
-
 /*==================================================
 FLECHAS
 ==================================================*/
@@ -676,8 +674,9 @@ LIGHTBOX
 
 #imagenGrande{
 
-    max-width:80%;
-    max-height:85vh;
+    max-width:90%;
+
+    max-height:88vh;
 
     border-radius:14px;
 
@@ -727,100 +726,54 @@ transform:scale(1);
 #siguiente{
 
     position:absolute;
+
     top:50%;
+
     transform:translateY(-50%);
 
-    width:38px;
-    height:38px;
+    width:58px;
+
+    height:58px;
 
     border:none;
+
     border-radius:50%;
 
-    background:rgba(255,255,255,.85);
+    background:#fff;
+
     color:#2563EB;
 
-    font-size:18px;
-    cursor:pointer;
+    font-size:30px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-weight:bold;
+
+    cursor:pointer;
 
     transition:.3s;
 
-}
-
-#anterior{
-    left:12px;
-}
-
-#siguiente{
-    right:12px;
 }
 
 #anterior:hover,
 #siguiente:hover{
 
     background:#2563EB;
+
     color:#fff;
-
-}
-
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.grupo{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.portafolio-contenedor{
-
-gap:10px;
-
-}
-
-.grupo{
-
-grid-template-columns:1fr;
-
-}
-
-.flecha{
-
-width:34px;
-height:34px;
-font-size:18px;
 
 }
 
 #anterior{
 
-left:8px;
+    left:35px;
 
 }
 
 #siguiente{
 
-right:8px;
+    right:35px;
 
 }
 
-#imagenGrande{
-
-max-width:88%;
-max-height:80vh;
-
-}
-
-}
 
 /*==================================================
 RESPONSIVE PORTAFOLIO
