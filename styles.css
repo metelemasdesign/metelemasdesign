@@ -1467,3 +1467,209 @@ RESPONSIVE GENERAL
 .hero h1 span::after{
     content:none !important;
 }
+/*==================================================
+   HERO — LANZAMIENTO
+==================================================*/
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:110px 20px 70px;
+    text-align:center;
+}
+
+.hero-contenido{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+/* LOGO */
+
+.logo-hero{
+    width:260px;
+    height:auto;
+    display:block;
+    margin:0 auto 24px;
+}
+
+/* AGENCIA GRÁFICA */
+
+.hero-etiqueta{
+    display:block;
+    margin:0 auto 18px;
+    color:#163B7A;
+    font-size:.82rem;
+    font-weight:500;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+/* ESPECIALIDADES */
+
+.hero-especialidad{
+    display:block;
+    margin:0 auto 22px;
+    color:#6B7280;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:1.8px;
+    line-height:1.6;
+}
+
+/* TÍTULO */
+
+.hero h1{
+    width:100%;
+    max-width:850px;
+    margin:0 auto 20px;
+    color:#111827;
+    font-size:3.6rem;
+    line-height:1.08;
+    font-weight:700;
+    text-align:center;
+}
+
+.hero h1 span{
+    color:#2563EB;
+}
+
+/* DESCRIPCIÓN */
+
+.hero-descripcion{
+    width:100%;
+    max-width:560px;
+    margin:0 auto 28px;
+    color:#6B7280;
+    font-size:1rem;
+    line-height:1.7;
+    text-align:center;
+}
+
+/* PROMOCIÓN */
+
+.hero-promocion{
+    width:max-content;
+    max-width:calc(100% - 40px);
+    margin:0 auto 30px;
+    padding:17px 30px;
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:4px;
+}
+
+.hero-promocion span{
+    color:#2563EB;
+    font-size:.7rem;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero-promocion strong{
+    color:#111827;
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.hero-promocion small{
+    color:#6B7280;
+    font-size:.8rem;
+}
+
+/* BOTONES */
+
+.hero .botones{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+    width:100%;
+}
+
+.hero .boton{
+    min-width:155px;
+    text-align:center;
+}
+
+/*==================================================
+   HERO — MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:100svh;
+        padding:100px 18px 50px;
+    }
+
+    .hero-contenido{
+        max-width:100%;
+    }
+
+    .logo-hero{
+        width:220px;
+        margin-bottom:20px;
+    }
+
+    .hero-etiqueta{
+        font-size:.72rem;
+        letter-spacing:1.6px;
+        margin-bottom:15px;
+    }
+
+    .hero-especialidad{
+        font-size:.62rem;
+        letter-spacing:1.1px;
+        padding:0 10px;
+        margin-bottom:20px;
+    }
+
+    .hero h1{
+        font-size:2.45rem;
+        line-height:1.1;
+        margin-bottom:18px;
+    }
+
+    .hero-descripcion{
+        font-size:.9rem;
+        padding:0 15px;
+        margin-bottom:25px;
+    }
+
+    .hero-promocion{
+        max-width:calc(100% - 20px);
+        padding:16px 22px;
+        margin-bottom:27px;
+    }
+
+    .hero-promocion strong{
+        font-size:1.15rem;
+    }
+
+    .hero-promocion small{
+        font-size:.75rem;
+    }
+
+    .hero .botones{
+        gap:12px;
+        flex-wrap:wrap;
+    }
+
+    .hero .boton{
+        min-width:145px;
+    }
+
+}
