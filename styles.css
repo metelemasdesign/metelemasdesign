@@ -172,13 +172,9 @@ HERO
 }
 
 .logo-hero{
-
-    width:340px;
-
-    margin:auto;
-
-    margin-bottom:15px;
-
+width:300px;
+margin:auto;
+margin-bottom:18px;
 }
 
 .hero h1{
@@ -196,6 +192,33 @@ HERO
     color:#2563EB;
 
 }
+
+.hero-etiqueta{
+font-size:.65rem;
+letter-spacing:1.3px;
+padding:0 15px;
+}
+
+.hero-descripcion{
+font-size:.9rem;
+padding:0 20px;
+}
+
+.hero-promocion{
+margin-left:20px;
+margin-right:20px;
+padding:16px 22px;
+}
+
+.hero-promocion strong{
+font-size:1.15rem;
+}
+
+.hero-promocion small{
+font-size:.75rem;
+}
+
+
 
 .botones{
 
