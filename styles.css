@@ -172,9 +172,8 @@ HERO
 }
 
 .logo-hero{
-width:300px;
-margin:auto;
-margin-bottom:18px;
+    width:240px;
+    margin:0 auto 18px;
 }
 
 .hero h1{
