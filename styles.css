@@ -1462,3 +1462,9 @@ RESPONSIVE GENERAL
         }
     }
 }
+.hero h1::before,
+.hero h1::after,
+.hero h1 span::before,
+.hero h1 span::after{
+    content:none !important;
+}
