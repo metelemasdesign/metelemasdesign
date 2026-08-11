@@ -1025,6 +1025,147 @@ SERVICIOS
 }
 
 /*==================================================
+OFERTAS DE LANZAMIENTO
+==================================================*/
+
+.ofertas{
+padding:100px 0;
+background:#ffffff;
+}
+
+.ofertas .titulo-seccion{
+text-align:center;
+margin-bottom:55px;
+}
+
+.ofertas .titulo-seccion .etiqueta{
+display:inline-block;
+color:#2563EB;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.ofertas .titulo-seccion h2{
+font-size:2.5rem;
+line-height:1.2;
+margin-bottom:15px;
+}
+
+.ofertas .titulo-seccion h2 span{
+color:#2563EB;
+}
+
+.ofertas .titulo-seccion p{
+color:#6B7280;
+}
+
+.ofertas-grid{
+display:grid;
+grid-template-columns:repeat(2, minmax(0, 1fr));
+gap:30px;
+max-width:900px;
+margin:0 auto;
+}
+
+.oferta-card{
+background:#ffffff;
+border:1px solid #E5E7EB;
+border-radius:24px;
+padding:40px;
+box-shadow:0 12px 35px rgba(0,0,0,.06);
+transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.oferta-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 45px rgba(0,0,0,.10);
+}
+
+.oferta-etiqueta{
+display:inline-block;
+color:#2563EB;
+font-size:.72rem;
+font-weight:700;
+letter-spacing:1.5px;
+margin-bottom:15px;
+}
+
+.oferta-card h3{
+font-size:1.7rem;
+color:#111827;
+margin-bottom:8px;
+}
+
+.oferta-precio{
+font-size:3rem;
+line-height:1;
+font-weight:700;
+color:#111827;
+margin:15px 0 20px;
+}
+
+.oferta-card > p{
+color:#6B7280;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.oferta-card ul{
+margin-bottom:30px;
+}
+
+.oferta-card ul li{
+color:#374151;
+font-size:.9rem;
+margin-bottom:12px;
+}
+
+.oferta-card .boton{
+display:block;
+width:100%;
+text-align:center;
+}
+
+/* Segunda tarjeta */
+
+.oferta-card:nth-child(2){
+border:1px solid #D1D5DB;
+}
+
+/*==========================
+RESPONSIVE OFERTAS
+==========================*/
+
+@media(max-width:768px){
+
+```
+.ofertas{
+    padding:75px 0;
+}
+
+.ofertas .titulo-seccion h2{
+    font-size:2rem;
+}
+
+.ofertas-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+}
+
+.oferta-card{
+    padding:30px 25px;
+}
+
+.oferta-precio{
+    font-size:2.7rem;
+}
+
+
+}
+
+
+
+/*==================================================
 CONTACTO
 ==================================================*/
 
